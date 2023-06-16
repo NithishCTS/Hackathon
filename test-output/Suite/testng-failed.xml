@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="bookShelves_page"/>
+        <include name="sofa_page"/>
+        <include name="giftcard_page"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Test.TestCases">
+        <methods>
+          <include name="searchBookShelves"/>
+          <include name="excludeOutOfStock"/>
+          <include name="price"/>
+          <include name="closeBrowser"/>
+          <include name="category"/>
+          <include name="driverSetup"/>
+          <include name="display_1st_Three_Results"/>
+        </methods>
+      </class> <!-- Test.TestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

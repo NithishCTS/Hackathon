@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-16T09:31:20 IST" name="Default suite" finished-at="2023-06-16T09:31:46 IST" duration-ms="26130">
+    <groups>
+      <group name="bookShelves_page">
+        <method signature="TestCases.searchBookShelves()[pri:1, instance:Test.TestCases@6574a52c]" name="searchBookShelves" class="Test.TestCases"/>
+        <method signature="TestCases.category()[pri:0, instance:Test.TestCases@6574a52c]" name="category" class="Test.TestCases"/>
+        <method signature="TestCases.price()[pri:0, instance:Test.TestCases@6574a52c]" name="price" class="Test.TestCases"/>
+        <method signature="TestCases.excludeOutOfStock()[pri:0, instance:Test.TestCases@6574a52c]" name="excludeOutOfStock" class="Test.TestCases"/>
+        <method signature="TestCases.display_1st_Three_Results()[pri:0, instance:Test.TestCases@6574a52c]" name="display_1st_Three_Results" class="Test.TestCases"/>
+      </group> <!-- bookShelves_page -->
+      <group name="giftcard_page">
+        <method signature="TestCases.customizeGiftCards()[pri:3, instance:Test.TestCases@6574a52c]" name="customizeGiftCards" class="Test.TestCases"/>
+        <method signature="TestCases.fillDetails()[pri:0, instance:Test.TestCases@6574a52c]" name="fillDetails" class="Test.TestCases"/>
+        <method signature="TestCases.captureErrorMessage()[pri:0, instance:Test.TestCases@6574a52c]" name="captureErrorMessage" class="Test.TestCases"/>
+      </group> <!-- giftcard_page -->
+      <group name="sofa_page">
+        <method signature="TestCases.sofasAndReclinders_Menu()[pri:2, instance:Test.TestCases@6574a52c]" name="sofasAndReclinders_Menu" class="Test.TestCases"/>
+        <method signature="TestCases.extractSub_Menus()[pri:0, instance:Test.TestCases@6574a52c]" name="extractSub_Menus" class="Test.TestCases"/>
+        <method signature="TestCases.printSub_Menus()[pri:0, instance:Test.TestCases@6574a52c]" name="printSub_Menus" class="Test.TestCases"/>
+      </group> <!-- sofa_page -->
+    </groups>
+    <test started-at="2023-06-16T09:31:20 IST" name="Default test" finished-at="2023-06-16T09:31:46 IST" duration-ms="26130">
+      <class name="Test.TestCases">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:Test.TestCases@6574a52c]" started-at="2023-06-16T09:31:13 IST" name="driverSetup" finished-at="2023-06-16T09:31:20 IST" duration-ms="6761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="searchBookShelves()[pri:1, instance:Test.TestCases@6574a52c]" started-at="2023-06-16T09:31:20 IST" name="searchBookShelves" finished-at="2023-06-16T09:31:24 IST" duration-ms="4859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBookShelves -->
+        <test-method signature="category()[pri:0, instance:Test.TestCases@6574a52c]" started-at="2023-06-16T09:31:24 IST" name="category" finished-at="2023-06-16T09:31:27 IST" depends-on-methods="Test.TestCases.searchBookShelves" duration-ms="2239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- category -->
+        <test-method signature="price()[pri:0, instance:Test.TestCases@6574a52c]" started-at="2023-06-16T09:31:27 IST" name="price" finished-at="2023-06-16T09:31:30 IST" depends-on-methods="Test.TestCases.category" duration-ms="3117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- price -->
+        <test-method signature="excludeOutOfStock()[pri:0, instance:Test.TestCases@6574a52c]" started-at="2023-06-16T09:31:30 IST" name="excludeOutOfStock" finished-at="2023-06-16T09:31:32 IST" depends-on-methods="Test.TestCases.price" duration-ms="2109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excludeOutOfStock -->
+        <test-method signature="display_1st_Three_Results()[pri:0, instance:Test.TestCases@6574a52c]" started-at="2023-06-16T09:31:32 IST" name="display_1st_Three_Results" finished-at="2023-06-16T09:31:34 IST" depends-on-methods="Test.TestCases.excludeOutOfStock" duration-ms="2136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- display_1st_Three_Results -->
+        <test-method signature="sofasAndReclinders_Menu()[pri:2, instance:Test.TestCases@6574a52c]" started-at="2023-06-16T09:31:34 IST" name="sofasAndReclinders_Menu" finished-at="2023-06-16T09:31:35 IST" duration-ms="1089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sofasAndReclinders_Menu -->
+        <test-method signature="extractSub_Menus()[pri:0, instance:Test.TestCases@6574a52c]" started-at="2023-06-16T09:31:35 IST" name="extractSub_Menus" finished-at="2023-06-16T09:31:35 IST" depends-on-methods="Test.TestCases.sofasAndReclinders_Menu" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extractSub_Menus -->
+        <test-method signature="printSub_Menus()[pri:0, instance:Test.TestCases@6574a52c]" started-at="2023-06-16T09:31:35 IST" name="printSub_Menus" finished-at="2023-06-16T09:31:36 IST" depends-on-methods="Test.TestCases.extractSub_Menus" duration-ms="286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printSub_Menus -->
+        <test-method signature="customizeGiftCards()[pri:3, instance:Test.TestCases@6574a52c]" started-at="2023-06-16T09:31:36 IST" name="customizeGiftCards" finished-at="2023-06-16T09:31:42 IST" duration-ms="6545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customizeGiftCards -->
+        <test-method signature="fillDetails()[pri:0, instance:Test.TestCases@6574a52c]" started-at="2023-06-16T09:31:42 IST" name="fillDetails" finished-at="2023-06-16T09:31:43 IST" depends-on-methods="Test.TestCases.customizeGiftCards" duration-ms="1226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillDetails -->
+        <test-method signature="captureErrorMessage()[pri:0, instance:Test.TestCases@6574a52c]" started-at="2023-06-16T09:31:43 IST" name="captureErrorMessage" finished-at="2023-06-16T09:31:46 IST" depends-on-methods="Test.TestCases.fillDetails" duration-ms="2405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureErrorMessage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Test.TestCases@6574a52c]" started-at="2023-06-16T09:31:46 IST" name="closeBrowser" finished-at="2023-06-16T09:31:51 IST" duration-ms="5513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Test.TestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
